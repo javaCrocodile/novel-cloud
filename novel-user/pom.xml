@@ -3,18 +3,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>novel-book</artifactId>
+        <artifactId>novel-cloud</artifactId>
         <groupId>com.wxh</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>book-api</artifactId>
-    <dependencies>
-        <dependency>
-            <groupId>com.wxh</groupId>
-            <artifactId>novel-common</artifactId>
-        </dependency>
-    </dependencies>
+    <artifactId>novel-user</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>user-api</module>
+        <module>user-service</module>
+    </modules>
 
 </project>

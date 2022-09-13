@@ -12,11 +12,12 @@
     <artifactId>novel-common</artifactId>
 
     <dependencies>
-
+<!--        nacos服务注册-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
+<!--        nacos配置管理-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
@@ -42,11 +43,15 @@
             <artifactId>spring-boot-starter-cache</artifactId>
         </dependency>
 
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-redis</artifactId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-redis</artifactId>-->
+<!--        </dependency>-->
 
 
         <dependency>
@@ -100,7 +105,7 @@
             <artifactId>lombok</artifactId>
         </dependency>
 
-        <!-- 替换默认的HttpURLConnection不支持@RequestBody+ RequestMethod.GET模式-->
+        <!-- 替换默认的HttpURLConnection，支持连接池，不支持@RequestBody+ RequestMethod.GET模式-->
         <dependency>
             <groupId>io.github.openfeign</groupId>
             <artifactId>feign-httpclient</artifactId>
